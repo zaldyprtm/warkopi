@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/output.css">
+    <script src="https://kit.fontawesome.com/a363c6a721.js" crossorigin="anonymous"></script>
+    <title>Zal | Login</title>
+</head>
+<body class="bg-slate-300">
+<!-- header start -->
+<!-- Header Section start -->
+<header class="bg-gray-800 absolute top-0 left-0 w-full flex items-center z-10">
+    <div class="container">
+        <div class="flex items-center justify-between relative">
+            <div class="px-4">
+                <a href="#" class="font-bold text-lg text-sky-400 block py-6  transition duration-300 ease-in-out opacity-65 hover:opacity-100">Home</a>
+            </div>
+
+            <div class="flex items-center px-4 text-black">
+                <!-- <button type="button" class="lg:hidden block absolute right-4" id="hamburger" name="hamburger">
+                    <span class="text-white"><i class="fa-solid fa-bars fa-white"></i></span>
+                </button> -->
+                <button id="hamburger" name="hamburger" type="button" class="block absolute right-4 lg:hidden ">
+                    <span class="text-white bg-white hamburger-line transition duration-300ms ease-in-out origin-top-left"></span>
+                    <span class="text-white bg-white hamburger-line transition duration-300 ease-in-out"></span>
+                    <span class="text-white bg-white hamburger-line transition duration-300ms ease-in-out origin-bottom-left"></span>
+                </button>
+
+                <nav id="navMenu" class="hidden  absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none transition duration-500 ease-in-out">
+                    <ul class="block lg:flex">
+                        <div class="lg:flex lg:mx-auto lg:relative lg:right-[150px]">
+                        <li class="group">
+                            <a href="#" class="text-base text-sky-500 py-2 mx-8 flex group-hover:text-primary transition duration-300 ease-in-out font-bold opacity-65 hover:opacity-100">About</a>
+                        </li>
+
+                        <li class="group">
+                            <a href="#" class="text-base text-sky-500 py-2 mx-8 flex group-hover:text-primary transition duration-300 ease-in-out font-bold opacity-65 hover:opacity-100">Services</a>
+                        </li>
+
+                        <li class="group">
+                            <a href="#home" class="text-base text-sky-500 py-2 mx-8 flex group-hover:text-primary transition duration-300 ease-in-out font-bold opacity-65 hover:opacity-100 ">News</a>
+                        </li>
+                    </div>
+                        <!--  <div class=" px-8 py-2 lg:relative lg:left-[200px]"> -->
+                            <!-- <li class="group">
+                                <a href="#" class="text-sky-500 hover:opacity-65 transiton ease-in-out duration-500"><i class="fa-solid fa-right-to-bracket"></i></a>
+                            </li> -->
+                            <div class="px-8 py-2 lg:relative lg:left-[200px]">
+                            <li class="group">
+                                <span class="text-sky-400"><i class="fa-solid fa-mug-hot fa-fade"></i></span>
+                            </li>
+                    </div> 
+                    </ul>
+                </nav>
+
+            </div>
+        </div>
+    </div>
+</header>
+<!-- Header Section End -->
+
+<!-- continer start -->
+<section class="h-[1000px]">
+    <div class="mx-auto justify-center bg-white h-[480px] w-[300px] mt-40 shadow-lg rounded-lg">
+        <div class="flex mx-auto justify-center">
+            <h1 class="text-sky-300 text-center mt-5 uppercase font-bold hover:text-teal-700 text-xl transiton ease-in-out duration-300">Login</h1>
+        </div>
+        <div class="flex justify-center">
+            <p class="text-slate-400 text-sm">login with your registered account</p>
+        </div>
+
+        <div class="px-4 mt-8">
+            <form action="" method="">
+                <label for="username">Username:
+                <input type="text" class="h-[40px] w-[270px] rounded-md border border-slate-400 px-1 outline-sky-500 mb-5 mt-2 placeholder-sky-800" placeholder="type your username" id="username" name="username" autocomplete="additional-name">
+            </label>
+
+
+            <label for="password">Password:
+                <input type="password" name="password" id="password" class="h-[40px] mt-1 w-[270px] rounded-md border placeholder-teal-800 border-slate-400 px-1 outline-sky-500" placeholder="type your password" autocomplete="current-password">
+            </label>
+            </form>
+        </div>
+
+        <div class="flex relative justify-center mt-5">
+            <button type="submit" class="h-[40px] w-[120px] mt-5 rounded-lg text-white bg-sky-400 hover:opacity-60 transition ease-in-out duration-400">LOGIN</button>
+        </div>
+
+        <div class="flex justify-center mt-2 mb-2">
+           <p class="font-bold">or</p>
+        </div>
+
+        <div class="flex relative justify-center">
+            <a href="register.html" class="h-[40px] w-[120px] rounded-lg text-white bg-green-400 text-center py-2 hover:opacity-60 transition ease-in-out duration-400">Daftar</a>
+        </div>
+
+        <div class="mt-5 flex justify-center">
+            <a href="#" class="text-xs hover:text-sky-600 text-slate-500 hover:underline">Forgot password?</a>
+        </div>
+
+    </div>
+</section>
+<!-- continer end -->
+
+
+    <script src="/src/js/script.js"></script>
+</body>
+</html>

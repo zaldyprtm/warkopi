@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* hamburger */
+.hamburger-line {
+    @apply w-[30px] h-[2px] my-2 block;
+}
+
+.hamburger-active > span:nth-child(1)  {
+    @apply rotate-45; 
+    @apply transition ease-in-out;
+}
+
+.hamburger-active > span:nth-child(2)  {
+    @apply scale-0;
+}
+
+.hamburger-active > span:nth-child(3)  {
+    @apply -rotate-45;
+}
+
+#nav-menu   {
+    transition-duration: 500ms;
+    transition: ease-in-out;
+
+}
+
+html {
+    font-family: Lato, sans-serif;
+}
+
+.hero {
+    -webkit-mask-image: linear-gradient(rgba(0,0,0, 1) 85%, rgba(0,0,0,0));
+    mask-image: linear-gradient(rgba(0, 0, 0, 1) 85%, rgba(0, 0, 0, 0));
+}
+
+/* .about img {
+    width: 100%;
+    -webkit-mask-image: url('../img/menu/splash.svg');
+    -webkit-mask-size: 50%;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+} */
+
+.shopping active{
+    right: 0;
+    border-radius: 30px;
+    transition: 0.5s ease-in-out;
+}
