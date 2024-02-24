@@ -46,7 +46,7 @@ window.onclick = (e) => {
 
 // shopping cart
 
-const cart = document.querySelector('.shopping');
+const cart = document.querySelector('.shopping-cart');
 
 document.querySelector('#shoppingButton').onclick = (e) => {
     cart.style.display = 'flex';
@@ -55,13 +55,10 @@ document.querySelector('#shoppingButton').onclick = (e) => {
 
 
 // close shopping cart
+const clsBtn = document.querySelector('.close-icon');
+const shopCart = document.querySelector('.shopping-cart');
 
-const sc = document.querySelector('#shoppingButton');
-document.addEventListener('click', function (e) {
-       
-  if (!sc.contains(e.target) && !cart.contains(e.target)) {
-    cart.classList.remove('active');
-    
-  }
-
-});
+clsBtn.onclick = (e) => {
+    e.preventDefault();
+    shopCart.style.display = 'none';
+};
