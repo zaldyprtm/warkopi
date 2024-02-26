@@ -598,12 +598,12 @@ video {
   top: -60px;
 }
 
-.left-0 {
-  left: 0px;
+.bottom-0 {
+  bottom: 0px;
 }
 
-.right-0 {
-  right: 0px;
+.left-0 {
+  left: 0px;
 }
 
 .right-4 {
@@ -614,6 +614,10 @@ video {
   right: 10px;
 }
 
+.right-\[50px\] {
+  right: 50px;
+}
+
 .top-0 {
   top: 0px;
 }
@@ -622,20 +626,16 @@ video {
   top: 100%;
 }
 
-.right-\[50px\] {
-  right: 50px;
-}
-
-.top-\[10px\] {
-  top: 10px;
-}
-
 .z-10 {
   z-index: 10;
 }
 
 .z-\[9999\] {
   z-index: 9999;
+}
+
+.m-0 {
+  margin: 0px;
 }
 
 .mx-8 {
@@ -651,11 +651,6 @@ video {
 .my-6 {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
-}
-
-.my-4 {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
 }
 
 .mb-1 {
@@ -694,6 +689,10 @@ video {
   margin-top: 2.5rem;
 }
 
+.mt-12 {
+  margin-top: 3rem;
+}
+
 .mt-14 {
   margin-top: 3.5rem;
 }
@@ -730,6 +729,10 @@ video {
   display: flex;
 }
 
+.grid {
+  display: grid;
+}
+
 .hidden {
   display: none;
 }
@@ -750,8 +753,8 @@ video {
   height: 30px;
 }
 
-.h-\[50vh\] {
-  height: 50vh;
+.h-\[80px\] {
+  height: 80px;
 }
 
 .min-h-\[100vh\] {
@@ -774,8 +777,8 @@ video {
   width: 300px;
 }
 
-.w-\[45rem\] {
-  width: 45rem;
+.w-\[500px\] {
+  width: 500px;
 }
 
 .w-full {
@@ -921,6 +924,10 @@ video {
   background-repeat: no-repeat;
 }
 
+.p-3 {
+  padding: 0.75rem;
+}
+
 .px-1 {
   padding-left: 0.25rem;
   padding-right: 0.25rem;
@@ -971,11 +978,6 @@ video {
   padding-bottom: 1.5rem;
 }
 
-.py-4 {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-
 .text-center {
   text-align: center;
 }
@@ -1023,6 +1025,10 @@ video {
   font-weight: 700;
 }
 
+.font-semibold {
+  font-weight: 600;
+}
+
 .uppercase {
   text-transform: uppercase;
 }
@@ -1035,6 +1041,11 @@ video {
 .text-black {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+.text-indigo-700 {
+  --tw-text-opacity: 1;
+  color: rgb(67 56 202 / var(--tw-text-opacity));
 }
 
 .text-orange-400 {
@@ -1161,22 +1172,8 @@ html {
     -webkit-mask-position: center;
 } */
 
-.shopping-cart {
-  position: absolute;
-  top: 100%;
-  right: -100%;
-  height: 60vh;
-  width: 35rem;
-  padding: 0 1.5rem;
-  background-color: #a59696;
-  color: var(--bg);
-  transition: 0.4s ease-in-out;
-}
-
-.shopping-cart.active{
-  right: 0;
-  border-radius: 20px;
-  transition: 0.5s ease-in-out;
+#item-detail-modal {
+  display: none;
 }
 
 .hover\:rotate-3:hover {
@@ -1227,28 +1224,80 @@ html {
 }
 
 @media (min-width: 768px) {
+  .md\:relative {
+    position: relative;
+  }
+
   .md\:left-\[200px\] {
     left: 200px;
-  }
-
-  .md\:right-0 {
-    right: 0px;
-  }
-
-  .md\:top-full {
-    top: 100%;
-  }
-
-  .md\:right-\[80px\] {
-    right: 80px;
   }
 
   .md\:left-\[80px\] {
     left: 80px;
   }
 
-  .md\:z-\[9999\] {
-    z-index: 9999;
+  .md\:right-\[20px\] {
+    right: 20px;
+  }
+
+  .md\:right-\[50px\] {
+    right: 50px;
+  }
+
+  .md\:left-\[50px\] {
+    left: 50px;
+  }
+
+  .md\:left-\[250px\] {
+    left: 250px;
+  }
+
+  .md\:left-\[400px\] {
+    left: 400px;
+  }
+
+  .md\:left-\[600px\] {
+    left: 600px;
+  }
+
+  .md\:left-\[500px\] {
+    left: 500px;
+  }
+
+  .md\:left-\[550px\] {
+    left: 550px;
+  }
+
+  .md\:left-\[580px\] {
+    left: 580px;
+  }
+
+  .md\:right-\[350px\] {
+    right: 350px;
+  }
+
+  .md\:right-\[300px\] {
+    right: 300px;
+  }
+
+  .md\:left-\[100px\] {
+    left: 100px;
+  }
+
+  .md\:right-\[330px\] {
+    right: 330px;
+  }
+
+  .md\:right-\[400px\] {
+    right: 400px;
+  }
+
+  .md\:right-\[370px\] {
+    right: 370px;
+  }
+
+  .md\:right-\[270px\] {
+    right: 270px;
   }
 
   .md\:flex {
@@ -1263,8 +1312,8 @@ html {
     width: 350px;
   }
 
-  .md\:w-\[500px\] {
-    width: 500px;
+  .md\:flex-wrap {
+    flex-wrap: wrap;
   }
 
   .md\:items-center {
@@ -1277,6 +1326,16 @@ html {
 
   .md\:gap-3 {
     gap: 0.75rem;
+  }
+
+  .md\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  .md\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 
   .md\:text-orange-500 {
@@ -1308,6 +1367,10 @@ html {
 
   .lg\:top-\[10px\] {
     top: 10px;
+  }
+
+  .lg\:right-\[20px\] {
+    right: 20px;
   }
 
   .lg\:block {

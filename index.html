@@ -39,7 +39,7 @@
 
                 <nav id="navMenu" class="hidden absolute py-5 bg-slate-800 shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none transition duration-300 ease-in-out  ">
                     <ul class="block md:flex md:justify-center md:items-center">
-                        <div class="lg:flex lg:right-[40px] lg:relative lg:justify-center">
+                        <div class="md:flex  md:relative md:right-[270px]">
                         <li class="group">
                             <a href="#about" class="text-base text-orange-500 py-2 mx-8 flex transition duration-300 ease-in-out font-bold  opacity-75 hover:opacity-100">About</a>
                         </li>
@@ -56,7 +56,7 @@
                             <a href="#contact" class="text-base text-orange-500 py-2 mx-8 flex transition duration-300 ease-in-out font-bold opacity-75 hover:opacity-100">Contact</a>
                         </li>
                     </div>
-                        <div class=" px-8 py-3 lg:relative md:left-[200px]">
+                        <div class=" px-8 py-3 md:relative md:left-[100px]">
                             <li class="group">
                                 <a href="#" class="text-orange-500 hover:opacity-65 transiton ease-in-out duration-500"><i class="fa-solid fa-right-to-bracket"></i></a>
                             </li>
@@ -71,22 +71,27 @@
 
 
                 </nav>
-                                <!-- shopping cart -->
-                                <div class="shopping-cart hidden transition ease-in-out duration-300 right-4 bg-slate-800 rounded-lg absolute h-[50vh] w-[45rem] text-black md:right-0 md:top-full md:w-[500px] md:z-[9999] md:flex" style="top: 100%; right: -100%;">
-                                    <div class="">
-                                        <a href="#" class="close-icon relative right-[10px] top-[10px] hover:opacity-65"><i class="fa-solid fa-x"></i></a>
-                                        <h3 class="mt-4">Product</h3>
-                
-                                    </div>
-                                </div>
+
+
+
              
-                <a href="#" id="shoppingButton" class="text-orange-400 text-lg relative right-[50px] md:left-[80px]"><i class="fa-solid fa-cart-shopping"></i></a>
+                <!-- <a href="#" id="shoppingButton" class="text-orange-400 text-lg relative right-[50px] md:left-[80px]"><i class="fa-solid fa-cart-shopping"></i></a> -->
             </div>
         </div>
     </div>
 </header>
 <!-- Header Section End -->
-    
+                                    <!-- shopping cart -->
+                                    <!-- <div class="list grid gap-5 mt-12" style="grid-template-columns: repeat(3, 1fr);"></div>
+
+                                    <div class="card fixed top-0 left-fuil w-[500px] bg-slate-400">
+                                        <h1 class="text-indigo-700 font-semibold m-0 p-3 h-[80px] flex items-center">Card</h1>
+                                        <ul class="listCard"></ul>
+                                        <div class="checkOut absolute bottom-0 w-full grid" style="grid-template-columns: repeat(2, 1fr);">
+                                            <div class="total">0</div>
+                                            <div class="closeShopping">Close</div>
+                                        </div>
+                                    </div> -->
 <!-- container start -->
 <section class=" mt-5">
 
@@ -96,7 +101,7 @@
 
         <div class="px-6 flex flex-wrap justify-center items-center w-full relative -top-10">
             <h1 class="font-bold text-orange-500 lg:text-5xl uppercase text-center text-4xl mb-2 font-lato">Mari menikmati secangkir <span class="text-[#6b4c35]">kopi </span> </h1>
-            <p class="text-white lg:text-xl text-md text-center font-bold mb-20">Nikmati secangkir kopi <span class="text-orange-500 "> terbaik dari biji kopi</span> <span class="text-white md:text-orange-500"> pilihan </span></p>
+            <p class="text-white md:text-2xl text-md text-center font-bold mb-20">Nikmati secangkir kopi <span class="text-orange-500 "> terbaik dari biji kopi</span> <span class="text-white md:text-orange-500"> pilihan </span></p>
 
             <div class=" lg:right-[300px] flex relative justify-center items-center lg:top-[10px] -top-[60px]">
                 <a href="#" class="text-white h-[30px] bg-[#6b4c35] w-[150px] flex items-center text-xs text-center justify-center rounded-lg hover:opacity-65 hover:text-yellow-400 transition-all ease-in-out duration-400 font-bold">BELI SEKARANG</a>
@@ -296,7 +301,7 @@
 <!-- footer end -->
 
 <!-- modal start -->
-<div id="item-detail-modal" class="hidden fixed z-[9999] left-o top-0 flex justify-center items-center overflow-auto mx-auto" style="background-color: rgba(0, 0, 0, 0.7); width: 100%; height: 100%;">
+<div id="item-detail-modal" class="itemModal fixed z-[9999] left-o top-0 flex justify-center items-center overflow-auto mx-auto" style="background-color: rgba(0, 0, 0, 0.7); width: 100%; height: 100%;">
     <div class="lg:relative flex flex-wrap bg-slate-400 text-black px-[18px] border border-slate-300 rounded-lg lg:w-[80%]" style="width: 85%;">
         <a href="#" class="close-icon relative right-[10px] mt-2 hover:opacity-65"><i class="fa-solid fa-x"></i></a>
  

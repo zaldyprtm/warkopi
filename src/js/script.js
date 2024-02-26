@@ -44,21 +44,12 @@ window.onclick = (e) => {
     }
 }
 
-// shopping cart
+// // shopping cart
 
-const cart = document.querySelector('.shopping-cart');
+// const openShop = document.querySelector('#shoppingButton');
+// const closeShop = document.querySelector('.closeShopping');
+// const body = document.querySelector('body');
 
-document.querySelector('#shoppingButton').onclick = (e) => {
-    cart.style.display = 'flex';
-    e.preventDefault();
-};
-
-
-// close shopping cart
-const clsBtn = document.querySelector('.close-icon');
-const shopCart = document.querySelector('.shopping-cart');
-
-clsBtn.onclick = (e) => {
-    e.preventDefault();
-    shopCart.style.display = 'none';
-};
+// openShop.addEventListener('click',  function () {
+//     body.classList.add('active');
+// });

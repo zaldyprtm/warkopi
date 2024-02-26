@@ -44,21 +44,6 @@ html {
     -webkit-mask-position: center;
 } */
 
-.shopping-cart {
-    position: absolute;
-    top: 100%;
-    right: -100%;
-    height: 60vh;
-    width: 35rem;
-    padding: 0 1.5rem;
-    background-color: #a59696;
-    color: var(--bg);
-    transition: 0.4s ease-in-out;
-}
-
-.shopping-cart.active{
-    right: 0;
-    border-radius: 20px;
-    transition: 0.5s ease-in-out;
-    
+#item-detail-modal {
+    display: none;
 }
