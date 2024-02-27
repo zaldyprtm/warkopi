@@ -1,13 +1,8 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["index.html"],
+  content: ['src/menu.html'],
   theme: {
-
-    extend: {
-      fontFamily: {
-        lato: ["Lato", "sans-serif"],
-      },
-    },
+    extend: {},
   },
-  plugins: [require("tailwind-gradient-mask-image")],
+  plugins: [],
 }
