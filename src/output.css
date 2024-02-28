@@ -1674,6 +1674,18 @@ html {
     right: 270px;
   }
 
+  .md\:right-\[370px\] {
+    right: 370px;
+  }
+
+  .md\:right-\[400px\] {
+    right: 400px;
+  }
+
+  .md\:right-\[450px\] {
+    right: 450px;
+  }
+
   .md\:flex {
     display: flex;
   }

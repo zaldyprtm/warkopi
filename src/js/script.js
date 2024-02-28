@@ -35,7 +35,7 @@ let products = [
     {
         id: 2,
         name: "Arabica",
-        images: "arabica.webp",
+        images: "arabica.jpg",
         price: 20000
     },
 
