@@ -208,6 +208,9 @@ position: relative;
 left: 0px;
 border-radius: 10px;
     }
+    .list .item img:hover {
+        transform: scale(1);
+    }
 
     .list .item .buttonAdd {
         width: 50%;
@@ -221,7 +224,7 @@ border-radius: 10px;
     }
 
     .list .item .title {
-        font-size: 11px;
+        font-size: 10px;
         margin-top: 4px;
     }
 
@@ -229,10 +232,6 @@ border-radius: 10px;
         font-size: 11px;
         font-weight: bold;
         text-align: center;
-    }
-
-    .list h1{
-        
     }
 
     .list {
