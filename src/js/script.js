@@ -140,7 +140,7 @@ let products = [
 let listCards = [];
 const initApp = () => {
     products.forEach((value, key) => {
-        let newDiv = document.createElement('div');
+        let newDiv = document.createElement("div");
         newDiv.classList.add("item");
         newDiv.innerHTML = `
         <img src ="img/menu/${value.images}">
@@ -157,9 +157,10 @@ initApp()
 
 const addToCart = (key) => {
     if (listCards[key] == null) {
-        listCards[key] = JSON.parse(json.stringify(products[key]));
+        listCards[key] = JSON.parse(JSON.stringify(products[key]));
         listCards[key].quantity = 1
     }
+
     reloadCard();
 }
 
@@ -168,19 +169,21 @@ const reloadCard = () => {
     let count = 0;
     let totalPrice = 0;
 
-    listCards.forEach((calue, key) => {
+    listCards.forEach((value, key) => {
         totalPrice = totalPrice + value.price;
         count = count + value.quantity;
-
         if (value != null) {
             let newDiv = document.createElement("li");
             newDiv.innerHTML = `
-            <div><img src="img/${value.images}"></div>
-            <div class="cardTitle">${value.name}</div>
-            <div class="cardPrice">${value.price.toLocaleString()}</div>
-            <div><button style="background-color: #560bad;" class="cardButton" onclick="changeQuantity(${key}, ${value.quantity - 1})">-</button></div>
-            <div class="count">${count}</div>
-            <div><button style="background-color: #560bad;" class="cardButton" onclick="changeQuantity(${key}, ${value.quantity + 1})">+</button></div>
+                <div style="margin-bottom: 8px;"><img src="img/menu/${value.images}"></div>
+                <div class="cardTitle">${value.name}</div>
+                <div class="cardPrice">${value.price.toLocaleString()}</div>
+
+                <div class="tombol">
+                <button style="background-color: #560bad;" class="cardButton" onclick="changeQuantity(${key}, ${value.quantity - 1})">-</button>
+                <div style="color: black;">${count}</div>
+                <button style="background-color: #560bad;" class="cardButton" onclick="changeQuantity(${key}, ${value.quantity + 1})">+</button>
+                </div>
             `;
             listCard.appendChild(newDiv);
         }
