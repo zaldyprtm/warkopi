@@ -146,7 +146,7 @@ const initApp = () => {
         <img src ="img/menu/${value.images}">
         <div class= "title">${value.name}</div> 
         <div class="price">${value.price.toLocaleString()}</div>
-        <button onclick="addToCart(${key})">Add To Cart</button>
+        <button class="buttonAdd" onclick="addToCart(${key})"><i class="fa-solid fa-cart-shopping"></i></button>
                            `
         
         list.appendChild(newDiv);

@@ -1488,6 +1488,47 @@ html {
   -o-transition: translateX(-200px);
 }
 
+/* responsive list product */
+
+@media only screen and (max-width: 500px) {
+  .list .item img{
+    width: 80px;
+    height: 60px;
+    position: relative;
+    left: 0px;
+    border-radius: 10px;
+  }
+
+  .list .item .buttonAdd {
+    width: 50%;
+    height: 40px;
+    font-size: 9px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 15px;
+  }
+
+  .list .item .title {
+    font-size: 11px;
+    margin-top: 4px;
+  }
+
+  .list .item .price {
+    font-size: 11px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .list h1{
+  }
+
+  .list {
+    padding: 15px;
+  }
+}
+
 .hover\:rotate-3:hover {
   --tw-rotate: 3deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
