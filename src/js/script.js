@@ -96,7 +96,9 @@ initApp()
 const addToCart = (key) => {
     if (listCards[key] == null) {
         listCards[key] = JSON.parse(JSON.stringify(products[key]));
-        listCards[key].quantity = 1
+        listCards[key].quantity = 1;
+    } else {
+        listCards[key].quantity += 1;
     }
 
     reloadCard();
@@ -107,9 +109,10 @@ const reloadCard = () => {
     let count = 0;
     let totalPrice = 0;
 
-    listCards.forEach((value, key) => {
-        totalPrice = totalPrice + value.price;
-        count = count + value.quantity;
+    for (const key of Object.keys(listCards)) {
+        const value = listCards[key];
+        totalPrice += value.price;
+        count += value.quantity;
         if (value != null) {
             let newDiv = document.createElement("li");
             newDiv.innerHTML = `
@@ -118,27 +121,31 @@ const reloadCard = () => {
                 <div class="cardPrice">${value.price.toLocaleString()}</div>
 
                 <div class="tombol">
-                <button style="background-color: #560bad;" class="cardButton" onclick="changeQuantity(${key}, ${value.quantity - 1})">-</button>
-                <div style="color: black;">${count}</div>
-                <button style="background-color: #560bad;" class="cardButton" onclick="changeQuantity(${key}, ${value.quantity + 1})">+</button>
+                    <button style="background-color: #560bad;" class="cardButton" onclick="changeQuantity('${key}', ${value.quantity - 1})">-</button>
+                    <div style="color: black;">${value.quantity}</div>
+                    <button style="background-color: #560bad;" class="cardButton" onclick="changeQuantity('${key}', ${value.quantity + 1})">+</button>
                 </div>
             `;
             listCard.appendChild(newDiv);
         }
-    });
+    }
 
     total.innerText = totalPrice.toLocaleString();
     quantity.innerText = count;
 }
 
 const changeQuantity = (key, quantity) => {
-    if ( quantity == 0 ) {
-        delete listCards[key]
+    if (typeof listCards[key] === 'undefined' || typeof products[key] === 'undefined') {
+        console.error('Invalid key:', key);
+        return;
+    }
+
+    if (quantity === 0) {
+        delete listCards[key];
     } else {
         listCards[key].quantity = quantity;
         listCards[key].price = quantity * products[key].price;
     }
 
-    reloadCard()
+    reloadCard();
 }
-
