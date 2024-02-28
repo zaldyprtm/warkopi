@@ -1500,7 +1500,9 @@ html {
   }
 
   .list .item img:hover {
-    transform: scale(1);
+    transform: scale(1.2);
+    transition: ease-in-out;
+    transition-duration: 0.3s;
   }
 
   .list .item .buttonAdd {
@@ -1516,7 +1518,7 @@ html {
 
   .list .item .title {
     font-size: 10px;
-    margin-top: 4px;
+    margin-top: 6px;
   }
 
   .list .item .price {
