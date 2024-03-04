@@ -10,48 +10,62 @@ hamburger.addEventListener('click', function() {
 
 
 // klik diluar hamburger
-window.addEventListener('click', function(e){
-    if(e.target != hamburger && e.target != navMenu) {
-        hamburger.classList.remove('hamburger-active');
-        navMenu.classList.add('hidden');
-    }
-});
+// window.addEventListener('click', function(e){
+//     if(e.target != hamburger && e.target != navMenu) {
+//         hamburger.classList.remove('hamburger-active');
+//         navMenu.classList.add('hidden');
+//     }
+// });
 
-// modal item box
-const itemDetailModal = document.querySelector('#item-detail-modal');
+// // modal item box 1
+const itemDetailModal = document.querySelector('.itemModal');
 
 const itemDetailButtons = document.querySelectorAll('.item-detail-button');
 
-itemDetailButtons.forEach((btn) => {
-    btn.onclick = (e) => {
-        e.preventDefault();
-        itemDetailModal.style.display = 'flex';
-    };
+// itemDetailButtons.forEach((btn) => {
+//     btn.onclick = (e) => {
+//         e.preventDefault();
+//         itemDetailModal.style.display = 'flex';
+//     };
+// });
+
+// MODAL BOX
+
+// Function to open a specific modal
+function openModal(modalId) {
+    document.getElementById(modalId).style.display = 'flex';
+  }
+
+  function closeMod() {
+    var modals = document.querySelectorAll('.modal');
+    modals.forEach(function(modal) {
+        modal.style.display = 'none';
+    });
+}
+  
+  // Function to close a specific modal
+  window.onclick = function(event) {
+    if (event.target && event.target.classList.contains('modal')) {
+        event.target.style.display = "none";
+    }
+  }
+
+  
+  document.addEventListener('DOMContentLoaded', function() {
+    const modal = document.querySelector('.modal');
+    const closeIcons = document.querySelectorAll('.close');
+
+    closeIcons.forEach(function(closeIcon) {
+        closeIcon.addEventListener('click', function() {
+            modal.style.display = 'none';
+        });
+    });
 });
 
-// close icon modal
-
-document.querySelector('.close-icons').onclick = (e) => {
-    e.preventDefault();
-    itemDetailModal.style.display = 'none';
-}
 
 
 
-// click diluar modal
-window.onclick = (e) => {
-    if(e.target === itemDetailModal ) {
-        itemDetailModal.style.display = 'none';
-     
-    }
-}
 
-// // shopping cart
 
-// const openShop = document.querySelector('#shoppingButton');
-// const closeShop = document.querySelector('.closeShopping');
-// const body = document.querySelector('body');
 
-// openShop.addEventListener('click',  function () {
-//     body.classList.add('active');
-// });
+

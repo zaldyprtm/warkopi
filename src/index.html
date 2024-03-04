@@ -203,7 +203,7 @@
             <p class="text-center text-white text-sm">IDR 55K</p>
 
 <div class="md:flex md:justify-center md:gap-3 flex justify-center gap-4">
-    <a href="#" class="item-detail-button hover:opacity-75 mt-3 text-center text-white"><i class="fa-regular fa-eye"></i></a>
+   <button onclick="openModal('modal1')" class="hover:opacity-75 mt-3 text-center text-white"><i class="fa-regular fa-eye"></i></button>
     
 </div>
         
@@ -214,7 +214,7 @@
             <p class="text-white mt-4 text-center">Roasted Coffee Beans Package</p>
             <p class="text-center text-white text-sm">IDR 60K</p>
             <div class="md:flex md:justify-center md:gap-3 flex justify-center gap-4">
-                <a href="#" class="item-detail-button hover:opacity-75 mt-3 text-center text-white"><i class="fa-regular fa-eye"></i></a>
+                <button onclick="openModal('modal2')" class="hover:opacity-75 mt-3 text-center text-white"><i class="fa-regular fa-eye"></i></button>
                 
             </div>
         </div>
@@ -224,7 +224,7 @@
             <p class="text-white mt-4 text-center">Blend Coffee Beans Package</p>
             <p class="text-center text-white text-sm">IDR 50K</p>
             <div class="md:flex md:justify-center md:gap-3 flex justify-center gap-4">
-                <a href="#" class="item-detail-button hover:opacity-75 mt-3 text-center text-white"><i class="fa-regular fa-eye"></i></a>
+                <button onclick="openModal('modal3')" class="hover:opacity-75 mt-3 text-center text-white"><i class="fa-regular fa-eye"></i></button>
                 
             </div>
         </div>
@@ -234,7 +234,7 @@
             <p class="text-white mt-4 text-center">Luwak Coffee Beans Package</p>
             <p class="text-center text-white text-sm">IDR 65K</p>
             <div class="md:flex md:justify-center md:gap-3 flex justify-center gap-4">
-                <a href="#" class="item-detail-button hover:opacity-75 mt-3 text-center text-white"><i class="fa-regular fa-eye"></i></a>
+                <button onclick="openModal('modal4')" class="hover:opacity-75 mt-3 text-center text-white"><i class="fa-regular fa-eye"></i></button>
                 
             </div>
         </div>
@@ -300,10 +300,10 @@
 </footer>
 <!-- footer end -->
 
-<!-- modal start -->
-<div id="item-detail-modal" class="itemModal fixed z-[9999] left-o top-0 flex justify-center items-center overflow-auto mx-auto" style="background-color: rgba(0, 0, 0, 0.7); width: 100%; height: 100%;">
+<!-- modal 1 start -->
+<div id="modal1" class="modal fixed z-[9999] left-o top-0 flex justify-center items-center overflow-auto mx-auto" style="background-color: rgba(0, 0, 0, 0.7); width: 100%; height: 100%;">
     <div class="lg:relative flex flex-wrap bg-slate-400 text-black px-[18px] border border-slate-300 rounded-lg lg:w-[80%]" style="width: 85%;">
-        <a href="#" class="close-icons relative right-[10px] mt-2 hover:opacity-65"><i class="fa-solid fa-x"></i></a>
+    <button class="close" onclick="closeMod()">&times;</button>
  
     <div class="flex flex-wrap lg:flex-nowrap my-6">
         <img src="./img/produk/original.jpg" alt="original" class="mr-[32px] mb-[32px] rounded-lg" style="height: 15rem;">
@@ -321,7 +321,77 @@
 
     </div>
 </div>
-<!-- modal end -->
+<!-- modal 1 end -->
+
+<!-- modal 2 start -->
+<div id="modal2" class="modal fixed z-[9999] left-o top-0 flex justify-center items-center overflow-auto mx-auto" style="background-color: rgba(0, 0, 0, 0.7); width: 100%; height: 100%;">
+    <div class="lg:relative flex flex-wrap bg-slate-400 text-black px-[18px] border border-slate-300 rounded-lg lg:w-[80%]" style="width: 85%;">
+        <button class="close" onclick="closeMod()">&times;</button>
+ 
+    <div class="flex flex-wrap lg:flex-nowrap my-6">
+        <img src="./img/produk/roasted.jpg" alt="original" class="mr-[32px] mb-[32px] rounded-lg" style="height: 15rem;">
+        <div class="flex flex-wrap">
+            <h3 class="text-orange-700 font-bold">Roasted Coffee Beans Package</h3>
+            <p class="text-black mt-2 font-lato">Keunggulan produk biji kopi panggang meliputi berbagai aspek yang membuatnya menjadi pilihan yang istimewa bagi para pecinta kopi yang menghargai kualitas dan keaslian pada kopi.</p>
+
+            <div class="md:flex md:justify-center md:gap-3 gap-4 mt-14 ">
+                <span class="text-black hover:opacity-75 cursor-pointer">Add to cart
+                <a href="#" class="hover:opacity-75 text-black text-center mt-3"><i class="fa-solid fa-cart-shopping"></i></a></span>
+            </div>
+            <div></div>
+        </div>
+    </div>
+
+    </div>
+</div>
+<!-- modal 2 end -->
+
+<!-- modal 3 start -->
+<div id="modal3" class="modal fixed z-[9999] left-o top-0 flex justify-center items-center overflow-auto mx-auto" style="background-color: rgba(0, 0, 0, 0.7); width: 100%; height: 100%;">
+    <div class="lg:relative flex flex-wrap bg-slate-400 text-black px-[18px] border border-slate-300 rounded-lg lg:w-[80%]" style="width: 85%;">
+        <button class="close" onclick="closeMod()">&times;</button>
+ 
+    <div class="flex flex-wrap lg:flex-nowrap my-6">
+        <img src="./img/produk/blend.jpg" alt="original" class="mr-[32px] mb-[32px] rounded-lg" style="height: 15rem;">
+        <div class="flex flex-wrap">
+            <h3 class="text-orange-700 font-bold">Blend Coffee Beans Package</h3>
+            <p class="text-black mt-2 font-lato">Keunggulan produk biji kopi Blend meliputi berbagai aspek yang membuatnya menjadi pilihan yang istimewa bagi para pecinta kopi yang menghargai kualitas dan keaslian pada kopi.</p>
+
+            <div class="md:flex md:justify-center md:gap-3 gap-4 mt-14 ">
+                <span class="text-black hover:opacity-75 cursor-pointer">Add to cart
+                <a href="#" class="hover:opacity-75 text-black text-center mt-3"><i class="fa-solid fa-cart-shopping"></i></a></span>
+            </div>
+            <div></div>
+        </div>
+    </div>
+
+    </div>
+</div>
+<!-- modal 3 end -->
+
+<!-- modal 4 start -->
+<div id="modal4" class="modal fixed z-[9999] left-o top-0 flex justify-center items-center overflow-auto mx-auto" style="background-color: rgba(0, 0, 0, 0.7); width: 100%; height: 100%;">
+    <div class="lg:relative flex flex-wrap bg-slate-400 text-black px-[18px] border border-slate-300 rounded-lg lg:w-[80%]" style="width: 85%;">
+        <button class="close" onclick="closeMod()">&times;</button>
+ 
+    <div class="flex flex-wrap lg:flex-nowrap my-6">
+        <img src="./img/produk/luwak.jpg" alt="original" class="mr-[32px] mb-[32px] rounded-lg" style="height: 15rem;">
+        <div class="flex flex-wrap">
+            <h3 class="text-orange-700 font-bold">Blend Coffee Beans Package</h3>
+            <p class="text-black mt-2 font-lato">Keunggulan produk biji kopi Blend meliputi berbagai aspek yang membuatnya menjadi pilihan yang istimewa bagi para pecinta kopi yang menghargai kualitas dan keaslian pada kopi.</p>
+
+            <div class="md:flex md:justify-center md:gap-3 gap-4 mt-14 ">
+                <span class="text-black hover:opacity-75 cursor-pointer">Add to cart
+                <a href="#" class="hover:opacity-75 text-black text-center mt-3"><i class="fa-solid fa-cart-shopping"></i></a></span>
+            </div>
+            <div></div>
+        </div>
+    </div>
+
+    </div>
+</div>
+<!-- modal 4 end -->
+
 
 
 

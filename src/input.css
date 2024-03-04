@@ -44,7 +44,10 @@ html {
     -webkit-mask-position: center;
 } */
 
-#item-detail-modal {
+#modal1,
+#modal2,
+#modal3,
+#modal4 {
     display: none;
 }
 
