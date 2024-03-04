@@ -27,52 +27,33 @@ closeShopping.addEventListener('click', () => {
 let products = [
     {
         id: 1,
-        name: "Espresso",
-        images: "espresso.jfif",
+        name: "Blend Coffee Beans",
+        images: "blend.jpg",
         price: 15000
     },
 
     {
         id: 2,
-        name: "Arabica",
-        images: "arabica.jpg",
+        name: "Original Coffee Beands",
+        images: "original.jpg",
         price: 20000
     },
 
     {
         id: 3,
-        name: "Cappucino",
-        images: "cappucino.jfif",
+        name: "Roasted Coffee Beans",
+        images: "roasted.jpg",
         price: 20000
     },
 
     {
         id: 4,
-        name: "Americano",
-        images: "americano.jpg",
+        name: "Luwak Coffee Beans",
+        images: "luwak.jpg",
         price: 17000
-    },
-
-    {
-        id: 5,
-        name: "Macchiato",
-        images: "macchiato.jfif",
-        price: 25000
-    },
-
-    {
-        id: 6,
-        name: "Mocha Latte",
-        images: "mocha.jfif",
-        price: 15000
-    },
-
-    {
-        id: 7,
-        name: "Iced Coffee",
-        images: "icedcoffee.jfif",
-        price: 12000
     }
+
+ 
 ];
 
 let listCards = [];
@@ -81,7 +62,7 @@ const initApp = () => {
         let newDiv = document.createElement("div");
         newDiv.classList.add("item");
         newDiv.innerHTML = `
-        <img src ="img/menu/${value.images}">
+        <img src ="img/produk/${value.images}">
         <div class= "title">${value.name}</div> 
         <div class="price">${value.price.toLocaleString()}</div>
         <button class="buttonAdd" onclick="addToCart(${key})"><i class="fa-solid fa-cart-shopping"></i></button>
@@ -116,7 +97,7 @@ const reloadCard = () => {
         if (value != null) {
             let newDiv = document.createElement("li");
             newDiv.innerHTML = `
-                <div style="margin-bottom: 8px;"><img src="img/menu/${value.images}"></div>
+                <div style="margin-bottom: 8px;"><img src="img/produk/${value.images}"></div>
                 <div class="cardTitle">${value.name}</div>
                 <div class="cardPrice">${value.price.toLocaleString()}</div>
 

@@ -622,10 +622,6 @@ video {
   right: 1rem;
 }
 
-.right-\[10px\] {
-  right: 10px;
-}
-
 .right-\[50px\] {
   right: 50px;
 }
@@ -879,10 +875,6 @@ video {
 
 .cursor-pointer {
   cursor: pointer;
-}
-
-.grid-cols-3 {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .flex-wrap {
